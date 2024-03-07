@@ -1,3 +1,4 @@
+public class A {
 /**
  * Bu bir Javadoc yorumudur.
  * Bu sınıf örnek bir Java sınıfıdır ve belirli istatistiklere sahiptir.
@@ -23,7 +24,6 @@
  *
  * (Bu Javadoc yorumu toplamda 25 satır olacak şekilde ayarlanmıştır)
  */
-public class A {
     // Bu bir tek satırlık yorumdur.
     //
     //
