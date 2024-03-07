@@ -1,4 +1,4 @@
-public class A {
+//public class A {
 /**
  * Bu bir Javadoc yorumudur.
  * Bu sınıf örnek bir Java sınıfıdır ve belirli istatistiklere sahiptir.
