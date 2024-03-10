@@ -1,34 +1,18 @@
-/** (1)
- *  (2)Bu sınıf, bir dikdörtgenin alanını ve çevresini hesaplamak için kullanılır.
- (3)*/ 
-public class Dikdortgen {
-    private int uzunluk;
-    private int genislik;
-    
-    /**(4)
-     * Dikdörtgenin alanını hesaplar.(5)
-     * @return Dikdörtgenin alanı(6)
-     (7)*/
-    public int alanHesapla() {
-        return uzunluk * genislik;
-    }
-    
-    /**(8)
-     * Dikdörtgenin çevresini hesaplar.(9)
-     * @return Dikdörtgenin çevresi(10)
-     (11)*/
-    public int cevreHesapla() {
-        return 2 * (uzunluk + genislik);
-    }
+package test;
 
-    //bosluk olursa ? 
+public class B{
 
-    /**(12)
-     *  (13)
-         yorum satiri(14)
-        assagisi 2 satir bosluk    (15)
+/**
+ * A javadoc comment.
+ * @param args
+ */
+public static deneme(){
 
+    System.out.println("/* This isn't a comment */");
+    /* This is a comment */
+    //Comment
+    System.out.println("//Not comment");
+}
 
-     (18)*/
-
+//Comment
 }
