@@ -1,18 +1,47 @@
-package test;
-
-public class B{
-
+package odev;
+import java.util.UUID;
+public class Motor {
+private String motorNo;
+private boolean calisiyor;
 /**
- * A javadoc comment.
- * @param args
- */
-public static deneme(){
-
-    System.out.println("/* This isn't a comment */");
-    /* This is a comment */
-    //Comment
-    System.out.println("//Not comment");
+* Varsayılan kurucu fonksiyon
+*/
+public Motor() {
+this.motorNo = UUID.randomUUID().toString();
+/* Başlangıçta false */calisiyor = false;
 }
-
-//Comment
+/**
+*
+* @param motorNo UUID olarak motor id
+* @return motor instance
+*/
+public Motor(String motorNo) {
+/*
+* Varolan bir motor no ile oluşturuluyor.
+*/
+this.motorNo = motorNo;
+calisiyor = false; // false yapılıyor
+}
+public void calistir() {
+/**
+* calisiyor true yapılıyor
+*/
+calisiyor = true;
+}
+/**
+* Motorun durdurulması //
+*/
+public void durdur() {
+calisiyor = false;
+}
+public String getMotorNo() {
+// motor no getir
+return motorNo;
+}
+@Override
+public String toString() {
+// durum belirlenmesi //
+String durum = calisiyor ? "Motor Çalışıyor." : "Motor Çalışmıyor";
+return durum;
+}
 }
